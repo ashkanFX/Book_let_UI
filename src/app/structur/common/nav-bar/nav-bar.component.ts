@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-
+  title = 'Book_let_UI';
+  test: string = "hidden "
+  ngClick(){
+    if (this.test === "hidden" ){
+      this.test   = "block scalein  animation-duration-90"
+    }else {
+      this.test ="hidden"
+    }
+  }
 }
