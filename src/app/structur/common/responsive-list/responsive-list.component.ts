@@ -5,13 +5,8 @@ import {AuthorsModel} from "../models/authors.model";
   selector: 'app-responsive-list',
   templateUrl: './responsive-list.component.html',
   styles: [`
-  .p-table {
-    background-color: brown;
-  }
-  .p-table tbody tr:hover {
-    background-color: #CDAC81;
-    margin-top: 5px
-  }
+
+
   `]
 })
 export class ResponsiveListComponent implements OnInit, OnChanges{

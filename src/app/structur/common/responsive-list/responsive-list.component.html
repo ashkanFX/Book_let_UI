@@ -7,10 +7,9 @@
         </th>
       </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-rowData let-columns="columns">K
+    <ng-template pTemplate="body" let-rowData let-columns="columns">
       <tr>
         <td *ngFor="let col of columns">
-          shod
           {{ rowData[col.field] }}
         </td>
       </tr>
