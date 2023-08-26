@@ -1,5 +1,5 @@
 <div class="card my-5">
-  <p-table class="p-table" [columns]="cols" [value]="authors" [tableStyle]="{ 'min-width': '50rem', 'background-color': 'black' }">
+  <p-table class="p-table" [columns]="col" [value]="authors" [tableStyle]="{ 'min-width': '50rem', 'background-color': 'black' }">
     <ng-template pTemplate="header" let-columns>
       <tr>
         <th *ngFor="let col of columns">
@@ -10,7 +10,7 @@
     <ng-template pTemplate="body" let-rowData let-columns="columns">
       <tr>
         <td *ngFor="let col of columns">
-          {{ rowData[col.field] }}
+
         </td>
       </tr>
     </ng-template>
