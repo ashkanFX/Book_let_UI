@@ -21,6 +21,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
     CommonModule,
     ButtonModule,
     TableModule,
+
     HttpClientModule
   ]
 })

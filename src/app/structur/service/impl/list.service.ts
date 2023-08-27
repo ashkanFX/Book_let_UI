@@ -8,6 +8,6 @@ export class ListService {
 
   constructor(private http :HttpClient) { }
   getList<T>(rest :string){
-    return this.http.get<T>(rest,{})
+    return this.http.get<T[]>(rest,{})
   }
 }
