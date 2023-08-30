@@ -13,8 +13,8 @@ import {MessageService} from "primeng/api";
 import {BrowserModule} from "@angular/platform-browser";
 import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 import {CheckboxModule} from "primeng/checkbox";
-
-
+import { FieldsetModule } from 'primeng/fieldset';
+import { InputSwitchModule } from 'primeng/inputswitch';
 @NgModule({
   declarations:[
     AuthorComponent,
@@ -22,7 +22,9 @@ import {CheckboxModule} from "primeng/checkbox";
   ],
   imports: [
     CommonModule,
+    FieldsetModule,
     ShareModule,
+    InputSwitchModule,
     CardModule,
     AutoCompleteModule,
     ReactiveFormsModule,

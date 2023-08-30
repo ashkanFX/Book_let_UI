@@ -1,29 +1,47 @@
-<div [formGroup]="authorsForm">
+<p-fieldset>
+  <ng-template pTemplate="header">
+    <div class="flex align-items-center ">
+      <span class="pi pi-user mr-2"></span>
+      <span class="font-bold text-lg">Add Author</span>
+    </div>
+  </ng-template>
+  <div [formGroup]="authorsForm" class="m-3">
+    <div class="md:col-4 flex justify-content-around">
     <span class="p-float-label">
         <input pInputText formControlName="firstName"/>
         <label htmlFor="firstName">firstName</label>
     </span>
-  <span class="p-float-label">
+      <span class="p-float-label">
         <input pInputText formControlName="lastName"/>
         <label htmlFor="lastName">lastName</label>
     </span>
-  {{ authorsForm.controls['firstName'].value }}
-  <span class="p-float-label">
+    </div>
+    <br>
+    <div class="md:col-4  flex justify-content-around">
+    <span class="p-float-label">
         <input pInputText formControlName="email"/>
         <label htmlFor="email">email</label>
     </span>
-  <span class="p-float-label">
+      <span class="p-float-label">
         <input pInputText formControlName="university"/>
         <label htmlFor="university">university</label>
     </span>
-  <div class="flex align-items-center gap-1">
-    <p-checkbox name="group1" value="San Francisco" formControlName="isAlive" inputId="live"></p-checkbox>
-    <label for="live">live</label>
+    </div>
+
   </div>
-  <div class="flex align-items-center gap-1">
-    <p-checkbox name="group1" value="Los Angeles" formControlName="isDead" inputId="dead"></p-checkbox>
-    <label for="dead">dead</label>
-  </div>
-</div>
-<button pButton (click)="add()">add</button>
-<p-toast></p-toast>
+  <div class="md:col-4  flex justify-content-around align-items-center">
+    <div class="flex  col-4 justify-content-around align-items-center">
+
+      <label htmlFor="email">alive : </label>
+      <p-inputSwitch></p-inputSwitch>
+
+    </div>
+    <span class="p-buttonset ml-6   ">
+      <p-button label="Save" class=""></p-button>
+
+    <button pButton class="p-button-danger" pRipple label="clear" icon="pi pi-trash"></button>
+
+</span>  </div>
+  <p-toast></p-toast>
+
+</p-fieldset>

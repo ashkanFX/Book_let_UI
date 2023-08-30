@@ -20,8 +20,7 @@ export class FormInputsComponent implements OnInit{
     email: new FormControl(null, [Validators.required]),
     university: new FormControl(null, [Validators.required]),
     isAlive: new FormControl(null),
-    isDead: new FormControl(null)
-  })
+   })
 
   authorsInfo: AuthorsModel = new AuthorsModel();
 
@@ -40,9 +39,6 @@ export class FormInputsComponent implements OnInit{
     return this.authorsForm.get('university')
   }
   get isAlive() {
-    return this.authorsForm.get('isAlive')
-  }
-  get isDead() {
     return this.authorsForm.get('isAlive')
   }
 
