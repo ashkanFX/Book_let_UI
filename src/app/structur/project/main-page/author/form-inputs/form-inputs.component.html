@@ -1,6 +1,6 @@
 <div [formGroup]="authorsForm">
     <span class="p-float-label">
-        <input formControlName="firstName"/>
+        <input pInputText formControlName="firstName"/>
         <label htmlFor="firstName">firstName</label>
     </span>
   <span class="p-float-label">
@@ -16,94 +16,14 @@
         <input pInputText formControlName="university"/>
         <label htmlFor="university">university</label>
     </span>
+  <div class="flex align-items-center gap-1">
+    <p-checkbox name="group1" value="San Francisco" formControlName="isAlive" inputId="live"></p-checkbox>
+    <label for="live">live</label>
+  </div>
+  <div class="flex align-items-center gap-1">
+    <p-checkbox name="group1" value="Los Angeles" formControlName="isDead" inputId="dead"></p-checkbox>
+    <label for="dead">dead</label>
+  </div>
 </div>
-
-
-<div class="container">
-  <form>
-    <p-card class="well form-horizontal" action=" " method="post" id="contact_form">
-      <fieldset>
-        <legend>authors information</legend>
-
-        <!-- Text input-->
-
-        <div class="form-group">
-          <label class="col-md-4 control-label">First Name</label>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input name="first_name" placeholder="First Name" class="form-control" type="text">
-            </div>
-          </div>
-        </div>
-
-        <!-- Text input-->
-
-        <div class="form-group">
-          <label class="col-md-4 control-label">Last Name</label>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-              <input name="last_name" placeholder="Last Name" class="form-control" type="text">
-            </div>
-          </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label">E-Mail</label>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <div class="p-inputgroup">
-    <span class="p-inputgroup-addon">
-        <i class="pi pi-user"></i>
-    </span>
-                <input pInputText placeholder="Username" />
-              </div>
-              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-               <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
-            </div>
-          </div>
-        </div>
-
-        <!-- Text input-->
-
-        <div class="form-group">
-          <label class="col-md-4 control-label">university</label>
-          <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-              <input name="address" placeholder="Address" class="form-control" type="text">
-            </div>
-          </div>
-        </div>
-
-        <!-- radio checks -->
-        <div class="form-group">
-          <label class="col-md-4 control-label">Is author alive ?</label>
-          <div class="col-md-4">
-            <div class="radio">
-              <label>
-                <input type="radio" name="hosting" value="yes"/> Yes
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="hosting" value="no"/> No
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Button -->
-        <div class="form-group">
-          <label class="col-md-4 control-label"></label>
-          <div class="col-md-4">
-            <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
-          </div>
-        </div>
-      </fieldset>
-    </p-card>
-  </form>
-</div>
-
+<button pButton (click)="add()">add</button>
+<p-toast></p-toast>

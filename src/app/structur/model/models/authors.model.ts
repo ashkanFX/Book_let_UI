@@ -5,4 +5,3 @@ export class AuthorsModel {
   university !: string;
   isAlive !: boolean;
 }
-

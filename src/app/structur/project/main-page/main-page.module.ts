@@ -7,6 +7,12 @@ import {CardModule} from "primeng/card";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { InputTextModule } from 'primeng/inputtext';
+import {ButtonModule} from "primeng/button";
+import {ToastModule} from "primeng/toast";
+import {MessageService} from "primeng/api";
+import {BrowserModule} from "@angular/platform-browser";
+import {NoopAnimationsModule} from "@angular/platform-browser/animations";
+import {CheckboxModule} from "primeng/checkbox";
 
 
 @NgModule({
@@ -20,9 +26,17 @@ import { InputTextModule } from 'primeng/inputtext';
     CardModule,
     AutoCompleteModule,
     ReactiveFormsModule,
-    InputTextModule
+    InputTextModule,
+    ButtonModule,
+    ToastModule,
+    BrowserModule,
+    NoopAnimationsModule,
+    CheckboxModule
   ],exports :[
     AuthorComponent
+  ],
+  providers: [
+    MessageService
   ]
 })
 export class MainPageModule { }
