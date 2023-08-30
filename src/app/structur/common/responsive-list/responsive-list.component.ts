@@ -22,7 +22,7 @@ export class ResponsiveListComponent<TData> implements OnInit {
     console.log(typeof this.rowData )
     this.list.getList<any>(this.rest).subscribe( (res)=>{
       this.rowData =  res
-      console.log(res);
+      console.table(res);
         console.log(this.rowData.length);
 
     }
