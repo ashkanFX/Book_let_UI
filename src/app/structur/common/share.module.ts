@@ -7,6 +7,7 @@ import {TableModule} from "primeng/table";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { FormInputsComponent } from './form-inputs/form-inputs.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {CardModule} from "primeng/card";
 
 
 
@@ -26,7 +27,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     ButtonModule,
     TableModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CardModule
   ]
 })
 export class ShareModule { }

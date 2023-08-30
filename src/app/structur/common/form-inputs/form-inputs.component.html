@@ -1,4 +1,4 @@
-<div [formGroup]="authorsForm">
+<!--<div [formGroup]="authorsForm">
     <span class="p-float-label">
         <input  formControlName="firstName"/>
         <label htmlFor="firstName">firstName</label>
@@ -7,7 +7,7 @@
         <input pInputText formControlName="lastName"/>
         <label htmlFor="lastName">lastName</label>
     </span>
-<!--  {{ authorsForm.controls['firstName'].value }}-->
+&lt;!&ndash;  {{ authorsForm.controls['firstName'].value }}&ndash;&gt;
   <span class="p-float-label">
         <input pInputText formControlName="email"/>
         <label htmlFor="email">email</label>
@@ -16,4 +16,87 @@
         <input pInputText formControlName="university"/>
         <label htmlFor="university">university</label>
     </span>
+</div>-->
+
+
+<div class="container">
+
+  <p-card class="well form-horizontal" action=" " method="post"  id="contact_form">
+    <fieldset>
+      <legend>authors information</legend>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">First Name</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label" >Last Name</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">university</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+            <input name="address" placeholder="Address" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- radio checks -->
+      <div class="form-group">
+        <label class="col-md-4 control-label">Is author alive ?</label>
+        <div class="col-md-4">
+          <div class="radio">
+            <label>
+              <input type="radio" name="hosting" value="yes" /> Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hosting" value="no" /> No
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    </fieldset>
+  </p-card>
 </div>
+
