@@ -1,0 +1,19 @@
+<div [formGroup]="authorsForm">
+    <span class="p-float-label">
+        <input  formControlName="firstName"/>
+        <label htmlFor="firstName">firstName</label>
+    </span>
+  <span class="p-float-label">
+        <input pInputText formControlName="lastName"/>
+        <label htmlFor="lastName">lastName</label>
+    </span>
+<!--  {{ authorsForm.controls['firstName'].value }}-->
+  <span class="p-float-label">
+        <input pInputText formControlName="email"/>
+        <label htmlFor="email">email</label>
+    </span>
+  <span class="p-float-label">
+        <input pInputText formControlName="university"/>
+        <label htmlFor="university">university</label>
+    </span>
+</div>

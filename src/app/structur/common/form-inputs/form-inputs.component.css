@@ -1,0 +1,9 @@
+label {
+  margin-bottom : 5px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

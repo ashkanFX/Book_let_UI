@@ -5,23 +5,27 @@ import {NavBarComponent} from "./nav-bar/nav-bar.component";
 import {ButtonModule} from "primeng/button";
 import {TableModule} from "primeng/table";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { FormInputsComponent } from './form-inputs/form-inputs.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
 @NgModule({
   declarations: [
     ResponsiveListComponent,
-    NavBarComponent
+    NavBarComponent,
+    FormInputsComponent
   ],
   exports: [
     ResponsiveListComponent,
-    NavBarComponent
+    NavBarComponent,
+    FormInputsComponent
   ],
   imports: [
     CommonModule,
     ButtonModule,
     TableModule,
-
+    ReactiveFormsModule,
     HttpClientModule
   ]
 })
