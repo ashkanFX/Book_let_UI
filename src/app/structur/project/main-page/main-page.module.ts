@@ -15,7 +15,8 @@ import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 import {CheckboxModule} from "primeng/checkbox";
 import { FieldsetModule } from 'primeng/fieldset';
 import { InputSwitchModule } from 'primeng/inputswitch';
-@NgModule({
+import {AppRoutingModule} from "./app-routing.module";
+ @NgModule({
   declarations:[
     AuthorComponent,
     FormInputsComponent
@@ -33,7 +34,8 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     ToastModule,
     BrowserModule,
     NoopAnimationsModule,
-    CheckboxModule
+    CheckboxModule,
+    AppRoutingModule
   ],exports :[
     AuthorComponent
   ],
