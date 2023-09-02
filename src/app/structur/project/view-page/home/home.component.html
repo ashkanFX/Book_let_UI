@@ -44,7 +44,7 @@
         <ng-template let-booklet pTemplate="item">
           <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
             <div class="mb-3">
-              <img src="favicon.ico">
+              <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ booklet.image }}" [alt]="booklet.name" class="w-6 shadow-2">
             </div>
             <div>
               <h4 class="mb-1">{{ booklet.name}}</h4>
