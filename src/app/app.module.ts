@@ -17,7 +17,7 @@ import {ViewPageModule} from "./structur/project/view-page/view-page.module";
         ShareModule,
         MainPageModule,
         RouterOutlet,
-      ViewPageModule
+        ViewPageModule
     ],
   providers: [],
   bootstrap: [AppComponent]

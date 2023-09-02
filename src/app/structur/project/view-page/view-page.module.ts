@@ -12,6 +12,7 @@ import { PanelModule } from 'primeng/panel';
 import { CarouselModule } from 'primeng/carousel';
 import {ButtonModule} from "primeng/button";
 import {ScrollPanelModule} from "primeng/scrollpanel";
+import {TagModule} from "primeng/tag";
 @NgModule({
   declarations: [
     HomeComponent
@@ -26,7 +27,8 @@ import {ScrollPanelModule} from "primeng/scrollpanel";
     ScrollPanelModule,
     ButtonModule,
     RadioButtonModule,
-    InputTextModule
+    InputTextModule,
+    TagModule
 
 
   ]
