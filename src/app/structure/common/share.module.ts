@@ -1,40 +1,39 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ResponsiveListComponent} from "./responsive-list/responsive-list.component";
-import {NavBarComponent} from "./nav-bar/nav-bar.component";
 import {ButtonModule} from "primeng/button";
 import {TableModule} from "primeng/table";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
-import { FormInputsComponent } from '../project/panel-page/author/form-inputs/form-inputs.component';
+import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
-import {CardModule} from "primeng/card";
 import {TranslateModule} from "@ngx-translate/core";
 import { Page404Component } from './page404/page404.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
-
-
+import {SidebarModule} from "primeng/sidebar";
+import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
+import { PanelNavbarComponent } from './panel-navbar/panel-navbar.component';
 
 @NgModule({
   declarations: [
     ResponsiveListComponent,
-    NavBarComponent,
     Page404Component,
     SideBarComponent,
-
+    ViewNavbarComponent,
+    PanelNavbarComponent,
   ],
   exports: [
     ResponsiveListComponent,
-    NavBarComponent,
-
+    SideBarComponent,
+    ViewNavbarComponent,
+    PanelNavbarComponent
   ],
-    imports: [
-        CommonModule,
-        ButtonModule,
-        TableModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        TranslateModule,
-
-    ]
+  imports: [
+    CommonModule,
+    ButtonModule,
+    TableModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    TranslateModule,
+    SidebarModule,
+  ]
 })
 export class ShareModule { }

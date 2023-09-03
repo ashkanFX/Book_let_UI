@@ -1,0 +1,30 @@
+<div class="col-12 z-5  h-4rem border-round-lg  flex flex-row-reverse"
+     [ngStyle]="{backgroundColor:'var(--primary-600)'}">
+  <div class="md:hidden absolute flex mr-2 align-items-center h-3rem">
+    <button style="color: aliceblue" pButton pRipple type="button" (click)="ngClick()"
+            class=" p-button-text md:w-5rem w-full md:w-6rem ">
+      <i class=" pi-bars pi"></i>
+    </button>
+  </div>
+  <ul style="list-style: none ;backgroundColor:var(--primary-600);"
+      class=" {{test}} md:block z-5 border-round md:h-1rem    h-22rem  md:ml-0 md:mt-auto mt-7  md:flex lg:col-6 xl:col-6 flex-row-reverse md:col-12 col-12 align-items-center">
+    <li class="my-3 ">
+      <button style="color: aliceblue" pButton pRipple type="button" (click)="ngClick()"
+              class=" w-full md:w-5rem flex justify-content-center md:w-2rem   p-button-text">
+        <img class="border-circle w-2rem h-2rem md:h-2rem  md:w-2rem " style="object-fit: cover"
+             src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+             alt="">
+      </button>
+    </li>
+  </ul>
+</div>
+<div class="card flex justify-content-center">
+  <p-sidebar [(visible)]="sidebarVisible">
+    <h3>Sidebar</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </p-sidebar>
+</div>
+
