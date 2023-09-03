@@ -1,0 +1,9 @@
+{
+  "hello": "hello {{value}}",
+  "home": "home {{value}}",
+  "aboutUs": "aboutUs {{value}}",
+  "search": "search {{value}}",
+  "messages": "messages {{value}}",
+  "header": "header {{value}}"
+}
+

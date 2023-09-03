@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {IAuthorInterface} from "./structur/service/interface/author.interface";
 import {IColInterface} from "./structur/service/interface/col.interface";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import {IColInterface} from "./structur/service/interface/col.interface";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor() {}
-
- }
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+    translate.use('fa');
+  }
+}

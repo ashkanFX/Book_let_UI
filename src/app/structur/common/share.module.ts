@@ -8,6 +8,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import { FormInputsComponent } from '../project/main-page/author/form-inputs/form-inputs.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {CardModule} from "primeng/card";
+import {TranslateModule} from "@ngx-translate/core";
 
 
 
@@ -22,13 +23,14 @@ import {CardModule} from "primeng/card";
     NavBarComponent,
 
   ],
-  imports: [
-    CommonModule,
-    ButtonModule,
-    TableModule,
-    ReactiveFormsModule,
-    HttpClientModule,
+    imports: [
+        CommonModule,
+        ButtonModule,
+        TableModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        TranslateModule,
 
-  ]
+    ]
 })
 export class ShareModule { }
