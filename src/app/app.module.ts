@@ -2,20 +2,14 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {CommonModule} from "@angular/common";
-import {ShareModule} from "./structur/common/share.module";
-import {MainPageModule} from "./structur/project/main-page/main-page.module";
+import {ShareModule} from "./structure/common/share.module";
+import {MainPageModule} from "./structure/project/panel-page/main-page.module";
 import {RouterOutlet} from "@angular/router";
-import {ViewPageModule} from "./structur/project/view-page/view-page.module";
+import {ViewPageModule} from "./structure/project/view-page/view-page.module";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}
-export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,4 +35,7 @@ export function createTranslateLoader(http: HttpClient) {
   bootstrap: [AppComponent]
 })
 export class AppModule {
+}
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }

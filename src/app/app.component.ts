@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {IAuthorInterface} from "./structur/service/interface/author.interface";
-import {IColInterface} from "./structur/service/interface/col.interface";
+import {IAuthorInterface} from "./structure/service/interface/author.interface";
+import {IColInterface} from "./structure/service/interface/col.interface";
 import {TranslateService} from "@ngx-translate/core";
 
 @Component({
