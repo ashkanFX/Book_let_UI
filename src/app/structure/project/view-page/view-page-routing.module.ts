@@ -3,11 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./home/home.component";
 
 const routes: Routes = [
+  {path : '' , redirectTo : '/view' , pathMatch : 'full'},
   {path : 'view' , component:HomeComponent}
+
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ViewPageRoutingModule { }
+export class ViewPageRoutingModule {
+
+}
