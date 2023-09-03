@@ -3,7 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {CommonModule} from "@angular/common";
 import {ShareModule} from "./structure/common/share.module";
-import {MainPageModule} from "./structure/project/panel-page/main-page.module";
+import {PanelPageModule} from "./structure/project/panel-page/panel-page.module";
 import {RouterOutlet} from "@angular/router";
 import {ViewPageModule} from "./structure/project/view-page/view-page.module";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
@@ -18,7 +18,7 @@ import {TranslateHttpLoader} from "@ngx-translate/http-loader";
     BrowserModule,
     CommonModule,
     ShareModule,
-    MainPageModule,
+    PanelPageModule,
     RouterOutlet,
     ViewPageModule,
     TranslateModule.forRoot({
