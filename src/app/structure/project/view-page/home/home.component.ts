@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit{
     category: 'Accessories',
     quantity: 24,
     inventoryStatus: 'INSTOCK',
-    rating: 5
+    rating: 2
   }, {
     id: '1000',
     code: 'f230fh0g3',
@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit{
     category: 'Accessories',
     quantity: 24,
     inventoryStatus: 'INSTOCK',
-    rating: 5
+    rating: 4
   }, {
     id: '1000',
     code: 'f230fh0g3',
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit{
     category: 'Accessories',
     quantity: 24,
     inventoryStatus: 'INSTOCK',
-    rating: 5
+    rating: 1
   }, {
     id: '1000',
     code: 'f230fh0g3',
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit{
     category: 'Accessories',
     quantity: 24,
     inventoryStatus: 'INSTOCK',
-    rating: 5
+    rating: 2
   }, {
     id: '1000',
     code: 'f230fh0g3',

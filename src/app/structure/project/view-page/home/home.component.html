@@ -19,25 +19,29 @@
     <div class="p-card">
       <p-carousel [value]="booklets" [numVisible]="4" [numScroll]="1" [circular]="true"
                   [responsiveOptions]="responsiveOptions" autoPlayInterval="3000">
-        <ng-template pTemplate="header">header</ng-template>
         <ng-template let-booklet pTemplate="item">
           <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
             <div class="mb-3">
-              <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ booklet.image }}" [alt]="booklet.name" class="w-6 shadow-2">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" [alt]="booklet.name"
+                   class="w-6 shadow-2">
             </div>
             <div>
               <h4 class="mb-1">{{ booklet.name}}</h4>
-              <h6 class="mt-0 mb-3">{{ '$' + booklet.price }}</h6>
+              <h5 class="mt-0 mb-3">{{  booklet.description }}</h5>
               <p-tag [value]="booklet.inventoryStatus" [severity]="getSeverity(booklet.inventoryStatus)"></p-tag>
               <div class="car-buttons mt-5">
+
+                <p-rating [readonly]="true" [cancel]="false" [(ngModel)]="booklet.rating"></p-rating>
+                <br>
+                <br>
+
                 <p-button type="button" styleClass="p-button p-button-rounded mr-2" icon="pi pi-search"></p-button>
                 <p-button type="button" styleClass="p-button-success p-button-rounded mr-2"
-                          icon="pi pi-star-fill"></p-button>
+                          icon="pi pi-download"></p-button>
               </div>
             </div>
           </div>
         </ng-template>
-        <ng-template pTemplate="footer">footer</ng-template>
       </p-carousel>
     </div>
 

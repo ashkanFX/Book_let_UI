@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ViewPageRoutingModule } from './view-page-routing.module';
 import { HomeComponent } from './home/home.component';
 import {ShareModule} from "../../common/share.module";
-
+import { RatingModule } from 'primeng/rating';
 import { InputTextModule } from 'primeng/inputtext';
 import { TabViewModule } from 'primeng/tabview';
 import { RadioButtonModule } from 'primeng/radiobutton';
@@ -13,6 +13,7 @@ import { CarouselModule } from 'primeng/carousel';
 import {ButtonModule} from "primeng/button";
 import {ScrollPanelModule} from "primeng/scrollpanel";
 import {TagModule} from "primeng/tag";
+import {FormsModule} from "@angular/forms";
 @NgModule({
   declarations: [
     HomeComponent
@@ -28,7 +29,9 @@ import {TagModule} from "primeng/tag";
     ButtonModule,
     RadioButtonModule,
     InputTextModule,
-    TagModule
+    TagModule,
+    RatingModule,
+    FormsModule
 
 
   ]
