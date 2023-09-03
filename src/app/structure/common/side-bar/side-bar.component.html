@@ -2,9 +2,13 @@
   <p-sidebar [(visible)]="sidebarVisible">
     <h3>Sidebar</h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
   </p-sidebar>
-  <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+  <div >
+    <p-button [style]="{'text-align': 'right'}" icon="pi pi-align-justify" (click)="sidebarVisible = true"
+              styleClass="p-button-rounded p-button-secondary p-button-text"></p-button>
+  </div>
 </div>

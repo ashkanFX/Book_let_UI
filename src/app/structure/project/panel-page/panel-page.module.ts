@@ -15,7 +15,7 @@ import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 import {CheckboxModule} from "primeng/checkbox";
 import { FieldsetModule } from 'primeng/fieldset';
 import { InputSwitchModule } from 'primeng/inputswitch';
-import {AppRoutingModule} from "./app-routing.module";
+import {PanelRoutingModule} from "./panel-routing.module";
  @NgModule({
   declarations:[
     AuthorComponent,
@@ -35,7 +35,7 @@ import {AppRoutingModule} from "./app-routing.module";
     BrowserModule,
     NoopAnimationsModule,
     CheckboxModule,
-    AppRoutingModule
+    PanelRoutingModule
   ],exports :[
     AuthorComponent
   ],
@@ -43,4 +43,4 @@ import {AppRoutingModule} from "./app-routing.module";
     MessageService
   ]
 })
-export class MainPageModule { }
+export class PanelPageModule { }
