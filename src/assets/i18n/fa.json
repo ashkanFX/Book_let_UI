@@ -1,8 +1,10 @@
 {
-"hello" : "سلام",
-"home" : "جزوه یار",
-"aboutUs" : "درباره ما",
-"messages" : "پیام ها",
-"search" : "جست و جو",
-"header" : "هدر"
+  "hello": "سلام",
+  "home": "جزوه یار",
+  "aboutUs": "درباره ما",
+  "messages": "پیام ها",
+  "search": "جست و جو",
+  "pageNotFound": "متأسفانه صفحه مورد نظر شما یافت نشد",
+  "clickToBackToHomePage": "با کلیک روی دکمه زیر وارد صفحه اصلی سایت شوید.",
+  "backToHomePage": "ورود به صفحه اصلی سایت"
 }

@@ -9,6 +9,7 @@ import { FormInputsComponent } from '../project/main-page/author/form-inputs/for
 import {ReactiveFormsModule} from "@angular/forms";
 import {CardModule} from "primeng/card";
 import {TranslateModule} from "@ngx-translate/core";
+import { Page404Component } from './page404/page404.component';
 
 
 
@@ -16,6 +17,7 @@ import {TranslateModule} from "@ngx-translate/core";
   declarations: [
     ResponsiveListComponent,
     NavBarComponent,
+    Page404Component,
 
   ],
   exports: [

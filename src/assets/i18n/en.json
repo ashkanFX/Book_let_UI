@@ -4,6 +4,9 @@
   "aboutUs": "aboutUs {{value}}",
   "search": "search {{value}}",
   "messages": "messages {{value}}",
-  "header": "header {{value}}"
+  "header": "header {{value}}",
+  "pageNotFound": "pageNotFound {{value}}",
+  "clickToBackToHomePage": "clickToBackToHomePage {{value}}",
+  "backToHomePage": "backToHomePage {{value}}"
 }
 
