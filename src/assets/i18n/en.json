@@ -14,6 +14,7 @@
   "university": "university {{value}}",
   "isAlive": "isAlive {{value}}",
   "save": "save {{value}}",
-  "clear": "clear {{value}}"
+  "clear": "clear {{value}}",
+  "adminPanel": "adminPanel {{value}}"
 }
 

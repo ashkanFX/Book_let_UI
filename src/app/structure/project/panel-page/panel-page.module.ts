@@ -25,23 +25,24 @@ import {TranslateModule} from "@ngx-translate/core";
     FormInputsComponent,
     HomeComponent
   ],
-  imports: [
-    CommonModule,
-    FieldsetModule,
-    ShareModule,
-    InputSwitchModule,
-    CardModule,
-    AutoCompleteModule,
-    ReactiveFormsModule,
-    InputTextModule,
-    ButtonModule,
-    ToastModule,
-    BrowserModule,
-    NoopAnimationsModule,
-    CheckboxModule,
-    PanelRoutingModule,
-    MenuModule
-  ],exports :[
+   imports: [
+     CommonModule,
+     FieldsetModule,
+     ShareModule,
+     InputSwitchModule,
+     CardModule,
+     AutoCompleteModule,
+     ReactiveFormsModule,
+     InputTextModule,
+     ButtonModule,
+     ToastModule,
+     BrowserModule,
+     NoopAnimationsModule,
+     CheckboxModule,
+     PanelRoutingModule,
+     MenuModule,
+     TranslateModule
+   ],exports :[
     AuthorComponent
   ],
   providers: [

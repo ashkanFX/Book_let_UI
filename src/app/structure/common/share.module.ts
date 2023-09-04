@@ -12,6 +12,7 @@ import {SidebarModule} from "primeng/sidebar";
 import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 import { PanelNavbarComponent } from './panel-navbar/panel-navbar.component';
 import { MenuModule } from 'primeng/menu';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { MenuModule } from 'primeng/menu';
     SideBarComponent,
     ViewNavbarComponent,
     PanelNavbarComponent,
+    FooterComponent,
   ],
   exports: [
     ResponsiveListComponent,
     SideBarComponent,
     ViewNavbarComponent,
-    PanelNavbarComponent
+    PanelNavbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
