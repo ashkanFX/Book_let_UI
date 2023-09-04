@@ -7,6 +7,13 @@
   "header": "header {{value}}",
   "pageNotFound": "pageNotFound {{value}}",
   "clickToBackToHomePage": "clickToBackToHomePage {{value}}",
-  "backToHomePage": "backToHomePage {{value}}"
+  "backToHomePage": "backToHomePage {{value}}",
+  "firstName": "firstName {{value}}",
+  "lastName": "lastName {{value}}",
+  "email": "email {{value}}",
+  "university": "university {{value}}",
+  "isAlive": "isAlive {{value}}",
+  "save": "save {{value}}",
+  "clear": "clear {{value}}"
 }
 

@@ -11,21 +11,21 @@ import {ListService} from "../../service/impl/list.service";
 
 
 export class ResponsiveListComponent<TData> implements OnInit {
-  constructor(private list: ListService) {}
+  constructor(private list: ListService) {
+  }
 
-  @Input() rowData: any[] ;
+  @Input() rowData: any[];
   @Input() rest: string = '';
   @Input() col: IColInterface[] = [];
   authors: AuthorsModel[] = []
 
   ngOnInit(): void {
-    console.log(typeof this.rowData )
-    this.list.getList<any>(this.rest).subscribe( (res)=>{
-      this.rowData =  res
-      console.table(res);
+    console.log(typeof this.rowData)
+    this.list.getList<any>(this.rest).subscribe((res) => {
+        this.rowData = res
+        console.table(res);
         console.log(this.rowData.length);
-
-    }
+      }
     )
   }
 

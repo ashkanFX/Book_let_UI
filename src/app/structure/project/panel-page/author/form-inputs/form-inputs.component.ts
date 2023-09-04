@@ -3,8 +3,6 @@ import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {AuthorsModel} from "../../../../model/models/authors.model";
 import {ListService} from "../../../../service/impl/list.service";
 import {MessageService} from "primeng/api";
-
-
 @Component({
   selector: 'form-inputs',
   templateUrl: './form-inputs.component.html',

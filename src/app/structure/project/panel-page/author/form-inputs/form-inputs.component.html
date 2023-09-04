@@ -4,21 +4,21 @@
       <div class="md:col-4 none flex justify-content-around">
     <span class="p-float-label">
         <input pInputText formControlName="firstName"/>
-        <label htmlFor="firstName">firstName</label>
+        <label htmlFor="firstName">{{'firstName' | translate}}</label>
     </span>
         <span class="p-float-label">
         <input pInputText formControlName="lastName"/>
-        <label htmlFor="lastName">lastName</label>
+        <label htmlFor="lastName">{{'lastName' | translate}}</label>
     </span>
       </div>
        <div class="md:col-4 none  flex justify-content-around">
     <span class="p-float-label">
         <input pInputText formControlName="email"/>
-        <label htmlFor="email">email</label>
+        <label htmlFor="email">{{'email' | translate}}</label>
     </span>
         <span class="p-float-label">
         <input pInputText formControlName="university"/>
-        <label htmlFor="university">university</label>
+        <label htmlFor="university">{{'university' | translate}}</label>
     </span>
       </div>
 
@@ -26,13 +26,13 @@
     <div class="md:col-4  flex justify-content-around align-items-center">
       <div class="flex  col-4 justify-content-around align-items-center">
 
-        <label htmlFor="email">alive : </label>
+        <label htmlFor="email">{{'isAlive' | translate}} :</label>
         <p-inputSwitch></p-inputSwitch>
 
       </div>
       <span class="p-buttonset ml-6   ">
-      <p-button label="Save" class=""></p-button>
-        <pbutton pButton class="p-button-danger" pRipple label="clear" icon="pi pi-trash"></pbutton>
+      <p-button label="{{'save' | translate}}"></p-button>
+        <pbutton pButton class="p-button-danger" pRipple label="{{'clear' | translate}}" icon="pi pi-trash"></pbutton>
       </span>
     </div>
   </div>
