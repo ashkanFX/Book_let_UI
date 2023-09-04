@@ -16,10 +16,13 @@ import {CheckboxModule} from "primeng/checkbox";
 import { FieldsetModule } from 'primeng/fieldset';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import {PanelRoutingModule} from "./panel-routing.module";
+import { MenuModule } from 'primeng/menu';
+import { HomeComponent } from './home/home.component';
  @NgModule({
   declarations:[
     AuthorComponent,
-    FormInputsComponent
+    FormInputsComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +38,8 @@ import {PanelRoutingModule} from "./panel-routing.module";
     BrowserModule,
     NoopAnimationsModule,
     CheckboxModule,
-    PanelRoutingModule
+    PanelRoutingModule,
+    MenuModule
   ],exports :[
     AuthorComponent
   ],

@@ -7,5 +7,26 @@ import { Component } from '@angular/core';
 })
 export class SideBarComponent {
   sidebarVisible: boolean = false;
-
+  items = [
+    {
+      label: 'Admin panel',
+      items: [
+        {
+          label: 'author',
+          icon: 'pi pi-user-plus',
+          routerLink: '/admin/author'
+        },
+        {
+          label: 'Router',
+          icon: 'pi pi-upload',
+          routerLink: '/fileupload'
+        },
+        {
+          label: 'view Page',
+          icon: 'pi pi-caret-right',
+          routerLink: '/view'
+        }
+      ]
+    }
+  ]
 }

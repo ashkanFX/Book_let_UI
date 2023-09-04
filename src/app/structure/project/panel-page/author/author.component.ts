@@ -9,8 +9,10 @@ import {FormBuilder} from "@angular/forms";
   styleUrls: ['./author.component.css']
 })
 export class AuthorComponent {
+
   constructor(private formBuilder : FormBuilder) {
   }
+
   row :  IAuthorInterface[] = []
   cols : IColInterface[] = [
     { field: 'firstName', header: 'firstName' },
