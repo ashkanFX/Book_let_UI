@@ -16,29 +16,32 @@ import {CheckboxModule} from "primeng/checkbox";
 import { FieldsetModule } from 'primeng/fieldset';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import {PanelRoutingModule} from "./panel-routing.module";
+import { MenuModule } from 'primeng/menu';
+import { HomeComponent } from './home/home.component';
 import {TranslateModule} from "@ngx-translate/core";
  @NgModule({
   declarations:[
     AuthorComponent,
-    FormInputsComponent
+    FormInputsComponent,
+    HomeComponent
   ],
-   imports: [
-     CommonModule,
-     FieldsetModule,
-     ShareModule,
-     InputSwitchModule,
-     CardModule,
-     AutoCompleteModule,
-     ReactiveFormsModule,
-     InputTextModule,
-     ButtonModule,
-     ToastModule,
-     BrowserModule,
-     NoopAnimationsModule,
-     CheckboxModule,
-     PanelRoutingModule,
-     TranslateModule
-   ],exports :[
+  imports: [
+    CommonModule,
+    FieldsetModule,
+    ShareModule,
+    InputSwitchModule,
+    CardModule,
+    AutoCompleteModule,
+    ReactiveFormsModule,
+    InputTextModule,
+    ButtonModule,
+    ToastModule,
+    BrowserModule,
+    NoopAnimationsModule,
+    CheckboxModule,
+    PanelRoutingModule,
+    MenuModule
+  ],exports :[
     AuthorComponent
   ],
   providers: [

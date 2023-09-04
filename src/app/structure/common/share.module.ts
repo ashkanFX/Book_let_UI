@@ -11,6 +11,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import {SidebarModule} from "primeng/sidebar";
 import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 import { PanelNavbarComponent } from './panel-navbar/panel-navbar.component';
+import { MenuModule } from 'primeng/menu';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PanelNavbarComponent } from './panel-navbar/panel-navbar.component';
   imports: [
     CommonModule,
     ButtonModule,
+    MenuModule,
     TableModule,
     ReactiveFormsModule,
     HttpClientModule,
