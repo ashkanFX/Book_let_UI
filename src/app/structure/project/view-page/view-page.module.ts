@@ -15,7 +15,7 @@ import {ScrollPanelModule} from "primeng/scrollpanel";
 import {TagModule} from "primeng/tag";
 import {FormsModule} from "@angular/forms";
 import { ToastModule } from 'primeng/toast';
-
+import { CardModule } from 'primeng/card';
 @NgModule({
   declarations: [
     HomeComponent
@@ -24,6 +24,7 @@ import { ToastModule } from 'primeng/toast';
     CommonModule,
     ToastModule,
     PanelModule,
+    CardModule,
     CarouselModule,
     ViewPageRoutingModule,
     ShareModule,

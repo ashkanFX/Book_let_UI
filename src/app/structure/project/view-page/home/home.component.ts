@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {CarouselModel} from "../../../model/models/carousel.model";
 
 @Component({
@@ -6,7 +6,16 @@ import {CarouselModel} from "../../../model/models/carousel.model";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
+  classScroll = "hidden"
+
+  @HostListener("window:scroll", []) onWindowScroll() {
+     if (window.scrollY >= 30) {
+      this.classScroll = 'flex'
+    }
+
+  }
+
   //=====carousel========
   booklets: CarouselModel[] = [{
     id: '1000',
@@ -74,7 +83,7 @@ export class HomeComponent implements OnInit{
     quantity: 24,
     inventoryStatus: 'INSTOCK',
     rating: 5
-  },{
+  }, {
     id: '1000',
     code: 'f230fh0g3',
     name: 'Bamboo Watch',
@@ -107,6 +116,7 @@ export class HomeComponent implements OnInit{
       }
     ];
   }
+
   getSeverity(status: string) {
     switch (status) {
       case 'INSTOCK':
@@ -115,7 +125,8 @@ export class HomeComponent implements OnInit{
         return 'warning';
       case 'OUTOFSTOCK':
         return 'danger';
-      default : return 'test';
+      default :
+        return 'test';
     }
   }
 }
