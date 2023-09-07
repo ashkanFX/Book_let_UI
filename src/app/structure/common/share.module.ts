@@ -13,6 +13,8 @@ import { ViewNavbarComponent } from './view-navbar/view-navbar.component';
 import { PanelNavbarComponent } from './panel-navbar/panel-navbar.component';
 import { MenuModule } from 'primeng/menu';
 import { FooterComponent } from './footer/footer.component';
+import { Page500Component } from './page500/page500.component';
+import { Page401Component } from './page401/page401.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     ViewNavbarComponent,
     PanelNavbarComponent,
     FooterComponent,
+    Page500Component,
+    Page401Component,
   ],
   exports: [
     ResponsiveListComponent,
