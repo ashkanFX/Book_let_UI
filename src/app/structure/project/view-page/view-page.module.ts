@@ -14,12 +14,15 @@ import {ButtonModule} from "primeng/button";
 import {ScrollPanelModule} from "primeng/scrollpanel";
 import {TagModule} from "primeng/tag";
 import {FormsModule} from "@angular/forms";
+import { ToastModule } from 'primeng/toast';
+
 @NgModule({
   declarations: [
     HomeComponent
   ],
   imports: [
     CommonModule,
+    ToastModule,
     PanelModule,
     CarouselModule,
     ViewPageRoutingModule,

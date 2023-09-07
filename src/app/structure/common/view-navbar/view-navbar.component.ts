@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class ViewNavbarComponent {
   title = 'Book_let_UI';
   test: string = "hidden "
+
   ngClick(){
     if (this.test === "hidden" ){
       this.test   = "block scalein  animation-duration-90"

@@ -1,9 +1,8 @@
-<!--
-<side-bar></side-bar>
--->
-<div class="col-12 z-5  h-4rem border-round-lg  flex flex-row-reverse" [ngStyle]="{backgroundColor:'var(--primary-600)'}">
+
+<div class="col-12 z-5  h-4rem border-round-lg  flex flex-row-reverse"
+     [ngStyle]="{backgroundColor:'var(--primary-600)'}">
   <div class="md:hidden absolute flex mr-2 align-items-center h-3rem">
-    <button style="color: aliceblue"  pButton pRipple type="button" (click)="ngClick()"
+    <button style="color: aliceblue" pButton pRipple type="button" (click)="ngClick()"
             class=" p-button-text md:w-5rem w-full md:w-6rem ">
       <i class=" pi-bars pi"></i>
     </button>
@@ -12,34 +11,34 @@
 
       class=" {{test}} md:block z-5 border-round md:h-1rem    h-22rem  md:ml-0 md:mt-auto mt-7  md:flex lg:col-6 xl:col-6 flex-row-reverse md:col-12 col-12 align-items-center">
     <li class="my-3 ">
-      <button style="color: aliceblue"  pButton pRipple type="button"
+      <button style="color: aliceblue" pButton pRipple type="button"
               class=" w-full md:w-5rem flex justify-content-center md:w-2rem   p-button-text">
-        <img class="border-circle w-2rem h-2rem md:h-2rem  md:w-2rem " style ="object-fit: cover"
+        <img class="border-circle w-2rem h-2rem md:h-2rem  md:w-2rem " style="object-fit: cover"
              src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
              alt="">
       </button>
     </li>
     <li class="my-3">
-      <button style="color: aliceblue"  pButton pRipple type="button" label="{{'home' | translate}}"
+      <button style="color: aliceblue" pButton pRipple type="button" label="{{'home' | translate}}"
               class=" p-button-text p-2 md:w-5rem w-full md:w-6rem ">
         <i class="pi-home pi "> </i>
       </button>
     </li>
     <li class="my-3">
-      <button style="color: aliceblue"  pButton pRipple type="button" label="{{'aboutUs' | translate}}"
+      <button style="color: aliceblue" pButton pRipple type="button" label="{{'aboutUs' | translate}}"
               class=" w-full md:w-8rem   p-button-text p-2">
         <i class="pi-users pi "> </i>
       </button>
     </li>
     <li class="my-3">
-      <button style="color: aliceblue"  pButton pRipple type="button" label="{{'adminPanel' | translate}}"
-              class="   md:w-8rem p-button-text p-2 w-full md:w-5rem " icon="pi pi-user-edit
-">
+      <button style="color: aliceblue" pButton pRipple type="button" routerLink="/admin"
+              label="{{'adminPanel' | translate}}"
+              class="   md:w-8rem p-button-text p-2 w-full md:w-5rem " icon="pi pi-user-edit">
         <i class=" "> </i>
       </button>
     </li>
     <li class="my-3">
-      <button style="color: aliceblue"  pButton pRipple type="button" label="{{'messages' | translate}}"
+      <button style="color: aliceblue" pButton pRipple type="button" label="{{'messages' | translate}}"
               class=" p-button-text p-2 md:w-8rem w-full md:w-5rem">
         <i class="pi-comments pi "> </i>
       </button>
