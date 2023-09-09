@@ -15,9 +15,9 @@ export class FormInputsComponent implements OnInit{
   authorsForm: FormGroup = this.fb.group({
     firstName: new FormControl(null, [Validators.required]),
     lastName: new FormControl(null, [Validators.required]),
-    email: new FormControl(null, [Validators.required]),
+    email: new FormControl(null, [Validators.required,Validators.email]),
     university: new FormControl(null, [Validators.required]),
-    isAlive: new FormControl(null),
+    isAlive: new FormControl(false),
    })
 
   authorsInfo: AuthorsModel = new AuthorsModel();
@@ -54,3 +54,5 @@ export class FormInputsComponent implements OnInit{
     })*/
   }
 }
+
+console.log(document.onreadystatechange);

@@ -1,40 +1,44 @@
+<div class="col-12 flex justify-content-center">
+  <div class="col-10">
+    <p-card header="Add author ">
+      <form [formGroup]="authorsForm">
+          <span class="p-float-label col-12 ">
+            <input pInputText class="col-12" formControlName="firstName"/>
+            <label htmlFor="firstName"> firstName</label>
+          </span>
+        <br>
+        <span class="p-float-label col-12 ">
+            <input pInputText class="col-12" formControlName="lastName"/>
+            <label htmlFor="firstName">lastName</label>
+          </span>
+        <br>
+        <span class="p-float-label col-12 ">
+            <input pInputText class="col-12" formControlName="email"/>
+            <label htmlFor="firstName">email</label>
+          </span>
+        <br>
+        <span class="p-float-label col-12 ">
+            <input pInputText class="col-12" formControlName="university"/>
+            <label htmlFor="firstName">university</label>
+          </span>
+        <div class="    col-12  ">
+          <div class="flex col-8 md:col-4 xl:col-2 lg:col-2 justify-content-around align-items-center">
 
-  <div [formGroup]="authorsForm" class="m-3">
-    <div class="lg:col-12">
-      <div class="md:col-4 none flex justify-content-around">
-    <span class="p-float-label">
-        <input pInputText formControlName="firstName"/>
-        <label htmlFor="firstName">{{'firstName' | translate}}</label>
-    </span>
-        <span class="p-float-label">
-        <input pInputText formControlName="lastName"/>
-        <label htmlFor="lastName">{{'lastName' | translate}}</label>
-    </span>
-      </div>
-       <div class="md:col-4 none  flex justify-content-around">
-    <span class="p-float-label">
-        <input pInputText formControlName="email"/>
-        <label htmlFor="email">{{'email' | translate}}</label>
-    </span>
-        <span class="p-float-label">
-        <input pInputText formControlName="university"/>
-        <label htmlFor="university">{{'university' | translate}}</label>
-    </span>
-      </div>
+            <label htmlFor="email">isAlive :</label>
+            <p-inputSwitch formControlName="isAlive"></p-inputSwitch>
 
-    </div>
-    <div class="md:col-4  flex justify-content-around align-items-center">
-      <div class="flex  col-4 justify-content-around align-items-center">
-
-        <label htmlFor="email">{{'isAlive' | translate}} :</label>
-        <p-inputSwitch></p-inputSwitch>
-
-      </div>
-      <span class="p-buttonset ml-6   ">
-      <p-button label="{{'save' | translate}}"></p-button>
-        <pbutton pButton class="p-button-danger" pRipple label="{{'clear' | translate}}" icon="pi pi-trash"></pbutton>
-      </span>
-    </div>
+          </div>
+          <div class="col-12 flex justify-content-end">
+            <p-button icon="pi pi-eraser " styleClass="p-button-danger" class=" mx-2"></p-button>
+             <p-button label="Submit" icon="pi pi-check" iconPos="right"></p-button>
+           </div>
+        </div>
+      </form>
+    </p-card>
   </div>
-  <p-toast></p-toast>
+</div>
+
+{{authorsForm.value | json}}
+
+
 

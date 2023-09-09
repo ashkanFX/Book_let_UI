@@ -98,7 +98,7 @@ export class HomeComponent implements OnInit {
   responsiveOptions: any[] | undefined;
 
   ngOnInit(): void {
-    this.responsiveOptions = [
+      this.responsiveOptions = [
       {
         breakpoint: '1199px',
         numVisible: 1,
@@ -130,3 +130,4 @@ export class HomeComponent implements OnInit {
     }
   }
 }
+
