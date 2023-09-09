@@ -15,6 +15,9 @@ import { MenuModule } from 'primeng/menu';
 import { FooterComponent } from './footer/footer.component';
 import { Page500Component } from './page500/page500.component';
 import { Page401Component } from './page401/page401.component';
+import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { Page401Component } from './page401/page401.component';
     FooterComponent,
     Page500Component,
     Page401Component,
+    UserComponent,
+    LoginComponent,
+    SignUpComponent,
   ],
   exports: [
     ResponsiveListComponent,
