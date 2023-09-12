@@ -17,6 +17,9 @@ import {FormsModule} from "@angular/forms";
 import { ToastModule } from 'primeng/toast';
 import { ToolbarModule } from 'primeng/toolbar';
 import { CardModule } from 'primeng/card';
+import { DialogModule} from "primeng/dialog";
+import {DialogService} from "primeng/dynamicdialog";
+
 @NgModule({
   declarations: [
     HomeComponent
@@ -37,9 +40,11 @@ import { CardModule } from 'primeng/card';
     InputTextModule,
     TagModule,
     RatingModule,
-    FormsModule
-
-
+    FormsModule,
+    DialogModule
+  ],
+  providers: [
+    DialogService
   ]
 })
 export class ViewPageModule { }

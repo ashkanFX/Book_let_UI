@@ -18,6 +18,7 @@ import { Page401Component } from './page401/page401.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { VideoModalComponent } from './video-modal/video-modal.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     UserComponent,
     LoginComponent,
     SignUpComponent,
+    VideoModalComponent,
   ],
   exports: [
     ResponsiveListComponent,

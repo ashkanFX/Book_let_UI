@@ -1,5 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {CarouselModel} from "../../../model/models/carousel.model";
+import { DialogService} from "primeng/dynamicdialog";
+import { VideoModalComponent} from "../../../common/video-modal/video-modal.component";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,8 @@ import {CarouselModel} from "../../../model/models/carousel.model";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  constructor(private dialogService: DialogService) {
+  }
   classScroll = "hidden"
 
   @HostListener("window:scroll", []) onWindowScroll() {
@@ -128,6 +132,13 @@ export class HomeComponent implements OnInit {
       default :
         return 'test';
     }
+  }
+
+  pishro() {
+    const ref = this.dialogService.open(VideoModalComponent, {
+      width: '48%'
+    })
+    // ref.close()
   }
 }
 
