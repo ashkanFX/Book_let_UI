@@ -17,9 +17,11 @@ import {FormsModule} from "@angular/forms";
 import { ToastModule } from 'primeng/toast';
 import { ToolbarModule } from 'primeng/toolbar';
 import { CardModule } from 'primeng/card';
+import { HomeBodyComponent } from './home/home-body/home-body.component';
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    HomeBodyComponent
   ],
   imports: [
     CommonModule,

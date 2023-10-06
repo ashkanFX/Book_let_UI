@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
 import {AuthorsModel} from "../../model/models/authors.model";
 import {IColInterface} from "../../service/interface/col.interface";
 import {ListService} from "../../service/impl/list.service";
@@ -13,6 +13,7 @@ import {ListService} from "../../service/impl/list.service";
 export class ResponsiveListComponent<TData> implements OnInit {
   constructor(private list: ListService) {
   }
+  visible: boolean = false;
 
   @Input() rowData: any[];
   @Input() rest: string = '';
@@ -20,13 +21,13 @@ export class ResponsiveListComponent<TData> implements OnInit {
   authors: AuthorsModel[] = []
 
   ngOnInit(): void {
-    console.log(typeof this.rowData)
+
+
     this.list.getList<any>(this.rest).subscribe((res) => {
         this.rowData = res
-        console.table(res);
-        console.log(this.rowData.length);
-      }
+        }
     )
   }
+
 
 }

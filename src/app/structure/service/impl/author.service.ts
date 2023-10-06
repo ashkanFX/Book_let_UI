@@ -5,10 +5,10 @@ import {AuthorsModel} from "../../model/models/authors.model";
 @Injectable({
   providedIn: 'root'
 })
-export class ListService {
+export class AuthorService {
 
-  constructor(private http :HttpClient) { }
-  getList<T>(rest :string){
-    return this.http.get<T[]>(rest,{})
-  }
+  constructor(private http : HttpClient) { }
+   add(authorModel : AuthorsModel){
+    return this.http.post('http://localhost:8081/author/register',authorModel)
+   }
 }

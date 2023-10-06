@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'side-bar',
@@ -9,24 +9,21 @@ export class SideBarComponent {
   sidebarVisible: boolean = false;
   items = [
     {
-      label: 'Admin panel',
+      label: 'Author',
+      icon: 'pi pi-fw pi-calendar',
       items: [
         {
-          label: 'author',
-          icon: 'pi pi-user-plus',
+          label: 'operation',
+          icon: 'pi pi-fw pi-pencil',
+          routerLink: '/admin/author/form'
+
+        }, {
+          label: 'list',
+          icon: 'pi pi-fw pi-pencil',
           routerLink: '/admin/author'
         },
-        {
-          label: 'Router',
-          icon: 'pi pi-upload',
-          routerLink: '/fileupload'
-        },
-        {
-          label: 'view Page',
-          icon: 'pi pi-caret-right',
-          routerLink: '/view'
-        }
+
       ]
     }
-  ]
+  ];
 }

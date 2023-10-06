@@ -3,6 +3,7 @@
            [tableStyle]="{ 'min-width': '50rem', 'background-color': 'black' }">
     <ng-template pTemplate="header">
       <tr>
+
         <th *ngFor="let col of col">
           {{ col.header }}
         </th>
@@ -25,8 +26,10 @@
         <td >
           {{Data.isAlive}}
         </td>
+        <td >
+         <p-button  styleClass="p-button-danger"   > <i class="pi pi-trash"></i> </p-button>
+        </td>
       </tr>
     </ng-template>
   </p-table>
 </div>
-

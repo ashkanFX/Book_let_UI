@@ -3,12 +3,12 @@
     <p-card header="Add author ">
       <form [formGroup]="authorsForm">
           <span class="p-float-label col-12 ">
-            <input pInputText class="col-12" formControlName="firstName"/>
+            <input pInputText class="col-12" formControlName="firstname"/>
             <label htmlFor="firstName"> firstName</label>
           </span>
         <br>
         <span class="p-float-label col-12 ">
-            <input pInputText class="col-12" formControlName="lastName"/>
+            <input pInputText class="col-12" formControlName="lastname"/>
             <label htmlFor="firstName">lastName</label>
           </span>
         <br>
@@ -30,15 +30,12 @@
           </div>
           <div class="col-12 flex justify-content-end">
             <p-button icon="pi pi-eraser " styleClass="p-button-danger" class=" mx-2"></p-button>
-             <p-button label="Submit" icon="pi pi-check" iconPos="right"></p-button>
+             <p-button (onClick)="add()" label="Submit" icon="pi pi-check" iconPos="right"></p-button>
            </div>
         </div>
       </form>
     </p-card>
   </div>
 </div>
-
-{{authorsForm.value | json}}
-
 
 
