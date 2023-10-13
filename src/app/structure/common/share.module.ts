@@ -26,7 +26,7 @@ import {TabViewModule} from "primeng/tabview";
 import {ScrollPanelModule} from "primeng/scrollpanel";
 import {RadioButtonModule} from "primeng/radiobutton";
 import {InputTextModule} from "primeng/inputtext";
-import { DialogModule } from 'primeng/dialog';
+import {DialogModule} from 'primeng/dialog';
 import {TagModule} from "primeng/tag";
 import {RatingModule} from "primeng/rating";
 

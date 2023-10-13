@@ -1,4 +1,4 @@
-import {Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {AuthorsModel} from "../../model/models/authors.model";
 import {IColInterface} from "../../service/interface/col.interface";
 import {ListService} from "../../service/impl/list.service";

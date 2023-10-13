@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { TabPanelComponent } from './tab-panel.component';
+import {TabPanelComponent} from './tab-panel.component';
 
 describe('TabPanelComponent', () => {
   let component: TabPanelComponent;

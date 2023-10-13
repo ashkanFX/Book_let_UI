@@ -9,17 +9,17 @@ import {AuthorService} from "../../../../service/impl/author.service";
   templateUrl: './form-inputs.component.html',
   styleUrls: ['./form-inputs.component.css']
 })
-export class FormInputsComponent implements OnInit{
-  constructor(private fb: FormBuilder, private listService: ListService,private authorService:AuthorService) {
+export class FormInputsComponent implements OnInit {
+  constructor(private fb: FormBuilder, private listService: ListService, private authorService: AuthorService) {
   }
 
   authorsForm: FormGroup = this.fb.group({
     firstname: new FormControl(null, [Validators.required]),
     lastname: new FormControl(null, [Validators.required]),
-    email: new FormControl(null, [Validators.required,Validators.email]),
+    email: new FormControl(null, [Validators.required, Validators.email]),
     university: new FormControl(null, [Validators.required]),
     isAlive: new FormControl(false),
-   })
+  })
 
   authorsInfo: AuthorsModel = new AuthorsModel();
 
@@ -27,11 +27,10 @@ export class FormInputsComponent implements OnInit{
   }
 
 
-
   add() {
-
-    this.authorService.add(this.authorsForm.value).subscribe( (response)=>{
+    this.authorService.add(this.authorsForm.value).subscribe((response) => {
       console.log(response);
-    } )
+      this.authorsForm.reset()
+    })
   }
 }

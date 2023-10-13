@@ -11,23 +11,25 @@
     </ng-template>
     <ng-template let-Data pTemplate="body">
       <tr>
-        <td >
+        <td>
           {{Data.firstname}}
         </td>
-        <td >
+        <td>
           {{Data.lastname}}
         </td>
-        <td >
-          {{Data.email}}
+        <td>
+          <a class="text-black-alpha-70  " href="mailto:  {{Data.email}}"> {{Data.email}}</a>
+
+
         </td>
-        <td >
+        <td>
           {{Data.university}}
         </td>
-        <td >
+        <td>
           {{Data.isAlive}}
         </td>
-        <td >
-         <p-button  styleClass="p-button-danger"   > <i class="pi pi-trash"></i> </p-button>
+        <td>
+          <p-button styleClass="p-button-danger"><i class="pi pi-trash"></i></p-button>
         </td>
       </tr>
     </ng-template>
