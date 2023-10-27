@@ -1,0 +1,41 @@
+<div class="col-12 flex justify-content-center">
+  <div class="col-10">
+    <p-card header=" author list ">
+
+      <p-table
+        [paginator]="true"
+        [value]="customers"
+        [rows]="10"
+        [showCurrentPageReport]="true"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        [rowsPerPageOptions]="[10, 25, 50]"
+      >
+        <ng-template pTemplate="header">
+          <tr>
+            <th style="width:25%">firstName</th>
+            <th style="width:25%">lastname</th>
+            <th style="width:25%">email</th>
+            <th style="width:25%">university</th>
+            <th style="width:25%">isAlive</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-customer>
+          <tr>
+            <td>{{ customer.firstname }}</td>
+            <td>{{ customer.lastname }}</td>
+            <td>{{ customer.email }}</td>
+            <td>{{ customer.university }}</td>
+            <td>{{ customer.isAlive }}</td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="paginatorleft">
+          <p-button type="button" icon="pi pi-plus" styleClass="p-button-text" routerLink=""></p-button>
+        </ng-template>
+        <ng-template pTemplate="paginatorright">
+          <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+        </ng-template>
+      </p-table>
+
+    </p-card>
+  </div>
+</div>
