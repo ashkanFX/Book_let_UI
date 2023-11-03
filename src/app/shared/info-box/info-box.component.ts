@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ContentChild, DoCheck, ElementRef, Input} from '@angular/core';
+import {AfterViewInit, Component, ContentChild, ElementRef, Input} from '@angular/core';
 import {InfoBoxEnum} from "../../enums/infoBox.enum";
 
 @Component({

@@ -29,7 +29,7 @@ import {InputTextModule} from "primeng/inputtext";
 import {DialogModule} from 'primeng/dialog';
 import {TagModule} from "primeng/tag";
 import {RatingModule} from "primeng/rating";
-import { InfoBoxComponent } from './info-box/info-box.component';
+import {InfoBoxComponent} from './info-box/info-box.component';
 
 @NgModule({
   declarations: [
