@@ -3,11 +3,11 @@ import {InfoBoxEnum} from "../../enums/infoBox.enum";
 
 @Component({
   // [textStyle][header] for make these two required to pass
-  selector: 'info-box[textStyle][header]',
+  selector: 'info-box[textStyle]',
   templateUrl: './info-box.component.html',
   styleUrls: ['./info-box.component.css']
 })
-export class InfoBoxComponent implements AfterViewInit ,DoCheck {
+export class InfoBoxComponent implements AfterViewInit  {
   @Input() textStyle: InfoBoxEnum = InfoBoxEnum.center;
   @Input('header') header: string | null;
   @ContentChild('text') text: ElementRef;
@@ -28,8 +28,5 @@ export class InfoBoxComponent implements AfterViewInit ,DoCheck {
     }
   }
 
-  ngDoCheck(): void {
-    console.log(this._message)
-  }
 
 }
