@@ -1,5 +1,10 @@
-<p-panel  header="{{header | titlecase}}">
-  <p class='{{textStyle}}'>
+<p-panel>
+  <ng-template pTemplate="header">
+    <span class="  text-xl">{{header | titlecase}}</span>
+  </ng-template>
+
+  <p class='{{textStyle}}   h-15rem '>
     <ng-content></ng-content>
+    <a href="http://localhost:4200/admin/author" style="text-decoration: none"> ...</a>
   </p>
 </p-panel>
